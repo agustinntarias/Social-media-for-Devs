@@ -1,3 +1,4 @@
 {
-  "mongoURI": "mongodb+srv://agustinntarias:agustinntarias@devconnector.quyck.mongodb.net/<dbname>?retryWrites=true&w=majority"
+  "mongoURI": "mongodb+srv://agustinntarias:agustinntarias@devconnector.quyck.mongodb.net/<dbname>?retryWrites=true&w=majority",
+  "jwtSecret": "mysecrettoken"
 }
