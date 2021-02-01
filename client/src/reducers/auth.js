@@ -1,4 +1,5 @@
 import {
+  ACCOUNT_DELETED,
   AUTH_ERROR,
   LOGIN_FAIL,
   LOGIN_SUCCESS,
@@ -37,6 +38,7 @@ export default function auth(state = initialState, { type, payload }) {
     case AUTH_ERROR:
     case LOGIN_FAIL:
     case LOGOUT:
+    case ACCOUNT_DELETED:
       localStorage.removeItem("token");
       return {
         ...state,
