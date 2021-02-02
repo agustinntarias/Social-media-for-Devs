@@ -7,6 +7,7 @@ import Spinner from "../layout/Spinner";
 import ProfileAbout from "./ProfileAbout";
 import ProfileEducation from "./ProfileEducation";
 import ProfileExperience from "./ProfileExperience";
+import ProfileGithub from "./ProfileGithub";
 import ProfileTop from "./ProfileTop";
 
 const Profile = ({
@@ -16,7 +17,6 @@ const Profile = ({
   auth,
 }) => {
   useEffect(() => {
-    console.log({ id: match.params.id });
     getProfileById(match.params.id);
   }, [getProfileById, match.params.id]);
 
@@ -70,6 +70,10 @@ const Profile = ({
                 <h4>No education credentials</h4>
               )}
             </div>
+
+            {profile.githubusername && (
+              <ProfileGithub username={profile.githubusername} />
+            )}
           </div>
         </Fragment>
       )}
