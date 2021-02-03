@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import React, { Fragment, useState } from "react";
 import { connect } from "react-redux";
-import { withRouter } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 import { addExperience } from "../../actions/profile";
 
 const AddExperience = ({ addExperience, history }) => {
@@ -112,9 +112,9 @@ const AddExperience = ({ addExperience, history }) => {
           ></textarea>
         </div>
         <input type="submit" className="btn btn-primary my-1" />
-        <a className="btn btn-light my-1" href="dashboard.html">
+        <Link className="btn btn-light my-1" to="dashboard">
           Go Back
-        </a>
+        </Link>
       </form>
     </Fragment>
   );
