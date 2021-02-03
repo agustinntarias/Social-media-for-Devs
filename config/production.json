@@ -1,0 +1,6 @@
+{
+  "mongoURI": "mongodb+srv://agustinntarias:agustinntarias@devconnector.quyck.mongodb.net/<dbname>?retryWrites=true&w=majority",
+  "jwtSecret": "mysecrettoken",
+  "githubClientID": "69fc5ba4bbda8f5fa46c",
+  "githubSecret": " 370a4bf4595015c39004e4f65b64d315c5d9d8ad"
+}
